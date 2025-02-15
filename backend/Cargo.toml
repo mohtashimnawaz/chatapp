@@ -1,0 +1,20 @@
+[package]
+name = "back"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+tokio = { version = "1", features = ["full"] }
+axum = { version = "0.6", features = ["ws"] }
+mongodb = "2.0"
+bson = "2.0"  # Add this line to include BSON support
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+jsonwebtoken = "8.3"
+tower = "0.4"
+tower-http = { version = "0.4", features = ["cors"] }
+dotenv = "0.15"
+tokio-stream = "0.1"
+futures-util = "0.3"
+chrono = { version = "0.4", features = ["serde"] }
